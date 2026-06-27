@@ -437,6 +437,26 @@ h2{
 .ec-item strong{ font-weight: 600; }
 .ec-item .dim{ font-size: 0.85rem; }
 
+.cert-list{
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.cert-list li{ font-size: 0.85rem; }
+.cert-list a{
+  color: var(--trace);
+  border-bottom: 1px solid var(--trace-dim);
+  padding-bottom: 1px;
+  transition: border-color .15s, color .15s;
+}
+.cert-list a:hover{
+  color: var(--ink);
+  border-color: var(--trace);
+}
+
 @media (max-width: 720px){
   .education-cert-row{ grid-template-columns: 1fr; gap: 28px; }
 }
