@@ -191,7 +191,7 @@ h2{
 }
 .ring-base{
   fill: none;
-  stroke: var(--rule);
+  stroke: #FFFFFF;
   stroke-width: 2;
 }
 .ring-sweep{
