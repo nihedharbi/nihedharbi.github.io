@@ -349,7 +349,6 @@ h2{
    ABOUT
 ========================================= */
 .about-text{
-  max-width: 700px;
   font-size: 1.05rem;
   color: var(--ink-dim);
   font-weight: 300;
