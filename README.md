@@ -9,8 +9,7 @@ Live sections: Hero (animated control-loop diagram), About, Experience, Projects
 .
 ├── index.html        # all content
 ├── style.css         # all styling
-└── assets/
-    └── Nihed_Harbi_Resume.pdf   # downloadable resume (linked from nav)
+
 ```
 
 No build step, no dependencies — just static HTML/CSS. Fonts are loaded from Google Fonts via CDN link.
