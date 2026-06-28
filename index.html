@@ -7,7 +7,7 @@
 <meta name="description" content="Nihed Harbi — Control &amp; Automation Engineer. Modeling, control systems, industrial automation and robotics." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght=400;500;600;700&family=IBM+Plex+Sans:wght=300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,13 +20,14 @@
   <div class="nav-inner">
     <a href="#top" class="nav-tag">N.HARBI</a>
     <nav class="nav-links">
-      <a href="#loop">Home</a>
       <a href="#about">About</a>
+      <a href="#loop">System</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </nav>
+    <a href="assets/Nihed_Harbi_Resume.pdf" class="nav-cta" download>↓ Resume</a>
   </div>
 </header>
 
@@ -37,7 +38,7 @@
     <div class="hero-inner">
       <div class="hero-top">
         <div class="hero-intro">
-          <p class="eyebrow">[SYS] CONTROL &amp; AUTOMATION ENGINEER</p>
+          <p class="eyebrow">[ SYS // CONTROL &amp; AUTOMATION ENGINEER ]</p>
           <h1 class="hero-title">
             Nihed Harbi
           </h1>
@@ -54,7 +55,7 @@
               <circle cx="100" cy="100" r="96" class="ring-sweep"/>
             </svg>
           </div>
-          <p class="portrait-caption"></p>
+          <p class="portrait-caption">[ SYS OWNER ]</p>
         </div>
       </div>
 
@@ -76,25 +77,21 @@
           <circle cx="112" cy="100" r="17" class="loop-sum"/>
           <line x1="103" y1="100" x2="121" y2="100" class="loop-sum-cross"/>
           <line x1="112" y1="91" x2="112" y2="109" class="loop-sum-cross"/>
-          
-          <!-- Corrected position for e(t) to avoid overlapping -->
-          <text x="145" y="90" class="loop-caption">e(t)</text>
-          
+          <text x="100" y="128" class="loop-caption">e(t)</text>
           <line x1="129" y1="100" x2="195" y2="100" class="loop-line" marker-end="url(#arrow)"/>
-          <text x="162" y="118" class="loop-caption" text-anchor="middle">error</text>
 
           <!-- controller block -->
           <rect x="200" y="56" width="240" height="88" rx="3" class="loop-block loop-block-main"/>
-          <text x="320" y="92" class="loop-block-title" text-anchor="middle">COMMAND</text>
+          <text x="320" y="92" class="loop-block-title" text-anchor="middle">NIHED HARBI</text>
           <text x="320" y="113" class="loop-block-sub" text-anchor="middle">CONTROLLER</text>
           <text x="320" y="130" class="loop-block-tag" text-anchor="middle">u(t) = Kp·e + Ki∫e + Kd·de/dt</text>
           <line x1="440" y1="100" x2="560" y2="100" class="loop-line" marker-end="url(#arrow)"/>
           <text x="500" y="92" class="loop-caption" text-anchor="middle">u(t)</text>
 
           <!-- plant block -->
-          <rect x="565" y="56" width="220" height="88" rx="3" class="loop-block loop-block-main"/>
-          <text x="675" y="98" class="loop-block-title" text-anchor="middle">SYSTEM</text>
-          <text x="675" y="118" class="loop-block-sub" text-anchor="middle">robot · process</text>
+          <rect x="565" y="56" width="220" height="88" rx="3" class="loop-block"/>
+          <text x="675" y="98" class="loop-block-title" text-anchor="middle">PLANT</text>
+          <text x="675" y="118" class="loop-block-sub" text-anchor="middle">robot · process · system</text>
           <line x1="785" y1="100" x2="940" y2="100" class="loop-line" marker-end="url(#arrow)"/>
 
           <!-- output -->
@@ -108,7 +105,12 @@
         </svg>
       </div>
 
-      <div class="hero-meta"></div>
+      <div class="hero-meta">
+        <a href="mailto:nihed.harbi.contact@gmail.com" class="meta-chip">nihed.harbi.contact@gmail.com</a>
+        <a href="tel:+213549788475" class="meta-chip">+213 549 788 475</a>
+        <span class="meta-chip">El Kala, Algeria</span>
+        <a href="https://linkedin.com/in/nihed-harbi" target="_blank" rel="noopener" class="meta-chip meta-chip-accent">LinkedIn ↗</a>
+      </div>
     </div>
   </section>
 
@@ -119,7 +121,11 @@
       <h2>About</h2>
     </div>
     <p class="about-text">
-      I'm a control &amp; automation engineer trained in modeling, control theory, industrial automation, and robotics -with hands-on R&amp;D technical support experience in the home-appliance industry covering product validation, regulatory compliance, and continuous improvement. I'm rigorous, autonomous, and problem-solving oriented, and I bring discipline together with team spirit to deliver reliable, flexible, and innovative engineering solutions for technically demanding projects. 
+      I'm a control &amp; automation engineer trained in modeling, control theory, industrial automation, and robotics —
+      with hands-on R&amp;D support experience in the home-appliance industry covering product validation,
+      regulatory compliance, and continuous improvement. I'm rigorous, autonomous, and problem-solving oriented,
+      and I bring discipline together with team spirit to deliver demanding technical projects, whether that's
+      tuning a PID loop on an STM32 board or planning real-time motion for a 7-DOF manipulator.
     </p>
   </section>
 
@@ -230,7 +236,7 @@
     <div class="skills-grid">
       <div class="skill-block">
         <h4>Control Systems</h4>
-        <p>Modeling, identification, optimization, real-time control development, PID &amp; State Feedback Tuning</p>
+        <p>Modeling, identification, optimization, real-time control development</p>
       </div>
       <div class="skill-block">
         <h4>Industrial Automation</h4>
@@ -238,7 +244,7 @@
       </div>
       <div class="skill-block">
         <h4>Robotics</h4>
-        <p>Kinematic &amp; dynamic modeling, motion planning, perception, navigation, ROS2</p>
+        <p>Kinematic &amp; dynamic modeling, motion planning, perception, navigation</p>
       </div>
       <div class="skill-block">
         <h4>Embedded &amp; Electronics</h4>
@@ -258,7 +264,7 @@
       </div>
       <div class="skill-block">
         <h4>Languages</h4>
-        <p>English — Advanced C1· French — B2 · Arabic — Native</p>
+        <p>French — B2 · English — C1 · Arabic — Native</p>
       </div>
     </div>
 
@@ -283,11 +289,11 @@
         <div class="ec-item">
           <strong>MathWorks (MATLAB)</strong>
           <ul class="cert-list">
-            <li><a href="https://matlabacademy.mathworks.com/details/deep-learning-onramp/deeplearning" target="_blank" rel="noopener">Deep Learning Onramp ↗</a></li>
-            <li><a href="https://matlabacademy.mathworks.com/details/machine-learning-onramp/machinelearning" target="_blank" rel="noopener">Machine Learning Onramp ↗</a></li>
-            <li><a href="https://matlabacademy.mathworks.com/details/wireless-communications-onramp/wireless" target="_blank" rel="noopener">Wireless Communications Onramp ↗</a></li>
-            <li><a href="https://matlabacademy.mathworks.com/details/matlab-coder-onramp/ormc" target="_blank" rel="noopener">MATLAB Coder Onramp ↗</a></li>
-            <li><a href="https://matlabacademy.mathworks.com/details/matlab-onramp/gettingstarted" target="_blank" rel="noopener">MATLAB Onramp ↗</a></li>
+            <li><a href="https://matlabacademy.mathworks.com/progress/share/certificate.html?id=1aeff6f3-9250-4e52-af67-acb7c72caaa1" target="_blank" rel="noopener">Deep Learning Onramp — Certificate ↗</a></li>
+            <li><a href="https://matlabacademy.mathworks.com/progress/share/certificate.html?id=2eaa3874-a76d-4f65-a5d1-6f9f40740aca" target="_blank" rel="noopener">Machine Learning Onramp — Certificate ↗</a></li>
+            <li><a href="https://matlabacademy.mathworks.com/progress/share/certificate.html?id=6cb2d3a6-3326-454b-9757-88199ec7e5be" target="_blank" rel="noopener">Wireless Communications Onramp — Certificate ↗</a></li>
+            <li><a href="https://matlabacademy.mathworks.com/progress/share/certificate.html?id=360b02cb-33e0-45d8-90f6-08065937108f" target="_blank" rel="noopener">MATLAB Coder Onramp — Certificate ↗</a></li>
+            <li><a href="https://matlabacademy.mathworks.com/progress/share/certificate.html?id=76444877-cf73-4922-8db0-4a4d69bf3962" target="_blank" rel="noopener">MATLAB Onramp — Certificate ↗</a></li>
           </ul>
         </div>
         <div class="ec-item">
@@ -309,20 +315,15 @@
       <div class="contact-links">
         <a href="mailto:nihed.harbi.contact@gmail.com" class="contact-link-primary">nihed.harbi.contact@gmail.com</a>
         <a href="tel:+213549788475" class="contact-link">+213 549 788 475</a>
-        <a href="https://linkedin.com/in/nihed-harbi" target="_blank" rel="noopener" class="contact-link">LinkedIn</a>
+        <a href="https://linkedin.com/in/nihed-harbi" target="_blank" rel="noopener" class="contact-link">linkedin.com/in/nihed-harbi ↗</a>
       </div>
     </div>
   </section>
 
 </main>
 
-<!-- ============ FOOTER ============ -->
 <footer class="footer">
   <p>Nihed Harbi — Control &amp; Automation Engineer · El Kala, Algeria</p>
-  <!-- Ajout des mentions de copyright demandées -->
-  <p style="margin-top: 8px; font-size: 0.85em; opacity: 0.7;">
-    Copyright &copy; 2026 Nihed Harbi <br> All Rights Reserved.
-  </p>
 </footer>
 
 </body>
