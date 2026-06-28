@@ -7,7 +7,7 @@
 <meta name="description" content="Nihed Harbi — Control &amp; Automation Engineer. Modeling, control systems, industrial automation and robotics." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght=400;500;600;700&family=IBM+Plex+Sans:wght=300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -27,7 +27,6 @@
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </nav>
-   
   </div>
 </header>
 
@@ -88,8 +87,8 @@
           <line x1="440" y1="100" x2="560" y2="100" class="loop-line" marker-end="url(#arrow)"/>
           <text x="500" y="92" class="loop-caption" text-anchor="middle">u(t)</text>
 
-          <!-- plant block -->
-          <rect x="565" y="56" width="220" height="88" rx="3" class="loop-block"/>
+          <!-- plant block (MODIFIED: applied loop-block-main class for identical styling) -->
+          <rect x="565" y="56" width="220" height="88" rx="3" class="loop-block loop-block-main"/>
           <text x="675" y="98" class="loop-block-title" text-anchor="middle">PLANT</text>
           <text x="675" y="118" class="loop-block-sub" text-anchor="middle">robot · process · system</text>
           <line x1="785" y1="100" x2="940" y2="100" class="loop-line" marker-end="url(#arrow)"/>
@@ -234,37 +233,42 @@
     </div>
 
     <div class="skills-grid">
+      <!-- NEWLY ADDED: Current Role Competencies Section -->
+      <div class="skill-block Highlight">
+        <h4>R&amp;D &amp; Quality Engineering</h4>
+        <p>Root Cause Analysis (8D, 5 Whys, Ishikawa), CAPA, Product Validation, Compliance Testing, Lean Manufacturing, 5S, PDCA, Scrap Reduction</p>
+      </div>
       <div class="skill-block">
         <h4>Control Systems</h4>
-        <p>Modeling, identification, optimization, real-time control development</p>
+        <p>Modeling, identification, optimization, real-time control development, PID &amp; State Feedback Tuning</p>
       </div>
       <div class="skill-block">
         <h4>Industrial Automation</h4>
-        <p>Control architecture design, SCADA development, HMI/API interfaces</p>
+        <p>Control architecture design, DCS systems, SCADA development, HMI/API interfaces</p>
       </div>
       <div class="skill-block">
         <h4>Robotics</h4>
-        <p>Kinematic &amp; dynamic modeling, motion planning, perception, navigation</p>
+        <p>Kinematic &amp; dynamic modeling, motion planning, trajectory tracking, MoveIt, RViz, Gazebo</p>
       </div>
       <div class="skill-block">
         <h4>Embedded &amp; Electronics</h4>
-        <p>PCB design, FPGA, microcontroller programming — STM32, ESP32, Arduino</p>
+        <p>PCB design, FPGA, microcontroller programming — STM32, ESP32, Arduino, Instrumentation maintenance</p>
       </div>
       <div class="skill-block">
-        <h4>Programming</h4>
-        <p>VHDL, Assembly, C/C++, Python, VBA, PLC programming (IEC 61131-3)</p>
+        <h4>Programming &amp; Frameworks</h4>
+        <p>C/C++, Python, VHDL, Assembly, VBA, ROS/ROS2, PLC programming (IEC 61131-3)</p>
       </div>
       <div class="skill-block">
-        <h4>Protocols</h4>
-        <p>Modbus, PROFINET, CAN Bus, HART, TCP/IP, MQTT</p>
+        <h4>Protocols &amp; Industrial Standards</h4>
+        <p>Modbus, PROFINET, CAN Bus, HART, TCP/IP, MQTT | EN 60335, EN 60456, EN 50242, LVD, EMC, RoHS, Ecodesign</p>
       </div>
       <div class="skill-block">
-        <h4>Software</h4>
-        <p>MATLAB/Simulink, NI LabVIEW, TIA Portal, Factory I/O, Proteus, SolidWorks, AutoCAD, ROS2</p>
+        <h4>Software Suites</h4>
+        <p>MATLAB/Simulink, NI LabVIEW, TIA Portal, Factory I/O, Proteus, SolidWorks, AutoCAD</p>
       </div>
       <div class="skill-block">
         <h4>Languages</h4>
-        <p>French — B2 · English — C1 · Arabic — Native</p>
+        <p>French — B2 · English — C1 (EF SET Advanced) · Arabic — Native</p>
       </div>
     </div>
 
