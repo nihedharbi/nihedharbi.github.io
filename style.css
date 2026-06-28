@@ -7,8 +7,8 @@
   --ink: #EDEFF2;
   --ink-dim: #9AA5B8;
   --rule: #2A3349;
-  --trace: #4285F4; /* Google blue signal trace */
-  --amber: #F5A623; /* HMI alert accent */
+  --trace: #4285F4;   /* Google blue signal trace */
+  --amber: #F5A623;   /* HMI alert accent */
   --trace-dim: rgba(66, 133, 244, 0.35);
 
   --font-display: 'IBM Plex Mono', monospace;
