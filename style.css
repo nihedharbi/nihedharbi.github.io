@@ -591,7 +591,6 @@ h2{
   font-family: var(--font-display);
   font-size: 0.75rem;
   color: var(--ink-dim);
-  border-top: 1px solid var(--rule);
   position: relative;
   z-index: 1;
 }
