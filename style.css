@@ -7,8 +7,8 @@
   --ink: #EDEFF2;
   --ink-dim: #9AA5B8;
   --rule: #2A3349;
-  --trace: #4285F4;   /* Google blue signal trace */
-  --amber: #F5A623;   /* HMI alert accent */
+  --trace: #4285F4; /* Google blue signal trace */
+  --amber: #F5A623; /* HMI alert accent */
   --trace-dim: rgba(66, 133, 244, 0.35);
 
   --font-display: 'IBM Plex Mono', monospace;
@@ -149,6 +149,84 @@ h2{
   text-align: left;
 }
 .hero-inner{ max-width: 980px; margin: 0 auto; }
+
+.hero-top{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 8px;
+}
+.hero-intro{ flex: 1; min-width: 0; }
+
+.hero-portrait{
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-top: 4px;
+}
+.portrait-frame{
+  position: relative;
+  width: 168px;
+  height: 168px;
+}
+.portrait-frame img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  filter: saturate(0.92) contrast(1.02);
+}
+.portrait-ring{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.ring-base{
+  fill: none;
+  stroke: var(--rule);
+  stroke-width: 2;
+}
+.ring-sweep{
+  fill: none;
+  stroke: var(--trace);
+  stroke-width: 2;
+  stroke-dasharray: 120 483;
+  stroke-linecap: round;
+  transform-origin: 100px 100px;
+  animation: sweep 6s linear infinite;
+}
+@keyframes sweep{
+  to{ transform: rotate(360deg); }
+}
+.ring-tick{
+  stroke: var(--ink-dim);
+  stroke-width: 2;
+}
+.portrait-caption{
+  font-family: var(--font-display);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  color: var(--ink-dim);
+  margin: 0;
+}
+
+@media (max-width: 720px){
+  .hero-top{
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+  }
+  .hero-intro{ text-align: center; width: 100%; }
+  .hero-sub{ margin-left: auto; margin-right: auto; }
+}
 
 .eyebrow{
   font-family: var(--font-display);
