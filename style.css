@@ -205,15 +205,11 @@ h2{
 @keyframes sweep{
   to{ transform: rotate(360deg); }
 }
-.ring-tick{
-  stroke: var(--ink-dim);
-  stroke-width: 2;
-}
 .portrait-caption{
   font-family: var(--font-display);
   font-size: 0.68rem;
   letter-spacing: 0.12em;
-  color: var(--ink-dim);
+  color: var(--trace);
   margin: 0;
 }
 
