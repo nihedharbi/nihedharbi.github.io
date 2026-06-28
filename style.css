@@ -348,7 +348,8 @@ h2{
    ABOUT
 ========================================= */
 .about-text{
-  max-width: 700px;
+  max-width: 100%;       /* MODIFIÉ : Prend désormais toute la largeur disponible de gauche à droite */
+  width: 100%;           /* AJOUTÉ : Assure une occupation totale du conteneur parent */
   font-size: 1.05rem;
   color: var(--ink-dim);
   font-weight: 300;
