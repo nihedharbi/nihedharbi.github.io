@@ -1,6 +1,6 @@
 /* =========================================
    TOKENS
-========================================== */
+========================================= */
 :root{
   --bg: #0B1220;
   --bg-raised: #101a2c;
@@ -580,6 +580,18 @@ h2{
   padding-bottom: 2px;
 }
 .contact-link-accent:hover{ border-color: var(--trace); }
+
+.contact-row{
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+}
+.contact-icon{
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+  opacity: 0.85;
+}
 
 /* =========================================
    FOOTER
