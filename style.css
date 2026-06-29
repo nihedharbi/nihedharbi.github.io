@@ -348,13 +348,29 @@ h2{
 /* =========================================
    ABOUT
 ========================================= */
+
 .about-text{
-  font-size: 1.05rem;
+  max-width: 600px;
+  margin: 0;
   color: var(--ink-dim);
+  font-family: var(--font-body);
+  font-size: 1rem;
   font-weight: 300;
+  line-height: 1.6;
 }
 
-/* =========================================
+.about-text p{
+  margin: 0 0 18px;
+}
+
+.about-text p:last-child{
+  margin-bottom: 0;
+}
+
+.about-text strong{
+  color: var(--ink);
+  font-weight: 500;
+}/* =========================================
    EXPERIENCE — timeline
 ========================================= */
 .timeline{
