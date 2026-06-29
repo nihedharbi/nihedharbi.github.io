@@ -350,10 +350,9 @@ h2{
 
 /* =========================================
    ABOUT
-   MODIFICATION 1 : max-width élargi + pas de centrage
 ========================================= */
 .about-text{
-  max-width: 100%;          /* ← pleine largeur, pas centré à gauche */
+  max-width: 100%;
   margin: 0;
   color: var(--ink-dim);
   font-family: var(--font-body);
@@ -445,12 +444,12 @@ h2{
   background: linear-gradient(135deg, var(--bg-raised), rgba(66,133,244,0.05));
 }
 
-/* MODIFICATION 2 : kicker en bleu, titre en blanc */
+/* type de projet en BLEU, titre du projet en BLANC */
 .project-kicker{
   font-family: var(--font-display);
   font-size: 0.7rem;
   letter-spacing: 0.1em;
-  color: var(--trace);      /* ← bleu */
+  color: var(--trace);   /* BLEU : MASTER'S THESIS, EMBEDDED CONTROL, etc. */
   margin: 0 0 10px;
 }
 .project-card h3{
@@ -458,7 +457,7 @@ h2{
   font-size: 1.08rem;
   font-weight: 600;
   line-height: 1.35;
-  color: var(--ink);        /* ← blanc */
+  color: var(--ink);     /* BLANC : titres des projets */
 }
 .project-card p{
   color: var(--ink-dim);
