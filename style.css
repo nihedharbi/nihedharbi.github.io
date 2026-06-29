@@ -368,7 +368,7 @@ h2{
 }
 
 .about-text strong{
-  color: var(--ink);
+  color: var(--ink-dim);
   font-weight: 500;
 }/* =========================================
    EXPERIENCE — timeline
