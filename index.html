@@ -3,15 +3,14 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Nihed Harbi — Control &amp; Automation Engineer</title>
-<meta name="description" content="Nihed Harbi — Control &amp; Automation Engineer. Modeling, control systems, industrial automation and robotics." />
+<title>Nihed Harbi — Control & Automation Engineer</title>
+<meta name="description" content="Nihed Harbi — Control & Automation Engineer. Modeling, control systems, industrial automation and robotics." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <!-- background grid -->
 <div class="scope-grid" aria-hidden="true"></div>
 
@@ -23,7 +22,6 @@
       <a href="#top">Home</a>
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
-      <a href="#experience">Experiences</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
@@ -32,16 +30,13 @@
 </header>
 
 <main id="top">
-
   <!-- ============ HERO : CONTROL LOOP ============ -->
   <section class="hero" id="loop">
     <div class="hero-inner">
       <div class="hero-top">
         <div class="hero-intro">
-          <p class="eyebrow">[SYS] CONTROL &amp; AUTOMATION ENGINEER</p>
-          <h1 class="hero-title">
-            Nihed Harbi
-          </h1>
+          <p class="eyebrow">[SYS] CONTROL & AUTOMATION ENGINEER</p>
+          <h1 class="hero-title">Nihed Harbi</h1>
           <p class="hero-sub">
             Closing the loop between modeling, control and real hardware — turning equations into working systems for robotics and industrial automation.
           </p>
@@ -53,7 +48,7 @@
         </div>
       </div>
 
-      <!-- THE SIGNATURE ELEMENT: animated control loop diagram -->
+      <!-- Control Loop Diagram -->
       <div class="loop-diagram" role="img" aria-label="Block diagram: reference input feeds a controller block labeled Nihed Harbi, driving a plant block, producing system output, fed back to the comparator.">
         <svg viewBox="0 0 1000 260" xmlns="http://www.w3.org/2000/svg" class="loop-svg">
           <defs>
@@ -61,12 +56,10 @@
               <path d="M0,0 L10,5 L0,10 z" fill="var(--trace)"/>
             </marker>
           </defs>
-
           <!-- reference input -->
           <text x="10" y="100" class="loop-label">r(t)</text>
           <text x="2" y="118" class="loop-caption">reference</text>
           <line x1="42" y1="100" x2="95" y2="100" class="loop-line" marker-end="url(#arrow)"/>
-
           <!-- summing junction -->
           <circle cx="112" cy="100" r="17" class="loop-sum"/>
           <line x1="103" y1="100" x2="121" y2="100" class="loop-sum-cross"/>
@@ -74,7 +67,6 @@
           <line x1="129" y1="100" x2="195" y2="100" class="loop-line" marker-end="url(#arrow)"/>
           <text x="162" y="88" class="loop-caption" text-anchor="middle">e(t)</text>
           <text x="162" y="118" class="loop-caption" text-anchor="middle">error</text>
-
           <!-- controller block -->
           <rect x="200" y="56" width="240" height="88" rx="3" class="loop-block loop-block-main"/>
           <text x="320" y="92" class="loop-block-title" text-anchor="middle">COMMAND</text>
@@ -82,20 +74,16 @@
           <text x="320" y="130" class="loop-block-tag" text-anchor="middle">u(t) = Kp·e + Ki∫e + Kd·de/dt</text>
           <line x1="440" y1="100" x2="560" y2="100" class="loop-line" marker-end="url(#arrow)"/>
           <text x="500" y="92" class="loop-caption" text-anchor="middle">u(t)</text>
-
           <!-- plant block -->
           <rect x="565" y="56" width="220" height="88" rx="3" class="loop-block loop-block-main"/>
           <text x="675" y="98" class="loop-block-title" text-anchor="middle">SYSTEM</text>
           <text x="675" y="118" class="loop-block-sub" text-anchor="middle">process</text>
           <line x1="785" y1="100" x2="940" y2="100" class="loop-line" marker-end="url(#arrow)"/>
-
           <!-- output -->
           <text x="950" y="95" class="loop-label">y(t)</text>
           <text x="912" y="118" class="loop-caption">output</text>
-
           <!-- feedback path -->
-          <path d="M 950 100 L 970 100 L 970 210 L 112 210 L 112 117"
-                class="loop-line loop-feedback" marker-end="url(#arrow)" fill="none"/>
+          <path d="M 950 100 L 970 100 L 970 210 L 112 210 L 112 117" class="loop-line loop-feedback" marker-end="url(#arrow)" fill="none"/>
           <text x="500" y="232" class="loop-caption" text-anchor="middle">feedback · sensing · diagnosis</text>
         </svg>
       </div>
@@ -108,41 +96,32 @@
       <p class="tag">[SYS-01] STATE VARIABLE</p>
       <h2>About</h2>
     </div>
+    
+    <p class="hero-sub about-text">
+      I'm a Control & Automation Engineer trained in modeling, control theory, 
+      industrial automation, and robotics, with expertise in PLC programming, SCADA systems, 
+      and industrial control systems architecture.
+    </p>
+    
     <p class="about-text">
-<p>
-  I'm a Control &amp; Automation Engineer trained in modeling, control theory,
-  industrial automation, and robotics, with expertise in PLC programming, SCADA systems,
-  and industrial control systems architecture.
-  I'm a Control &amp; Automation Engineer trained in modeling, control theory,
-  industrial automation, and robotics, with expertise in PLC programming, SCADA systems,
-  and industrial control systems architecture.
-</p>
-
-<p>
-  Experienced in R&amp;D technical support within the home-appliance industry, with responsibilities
-  spanning product validation, regulatory compliance, root-cause analysis, troubleshooting,
-  and continuous improvement.
-</p>
-
-<p>
-  I am a rigorous, autonomous, and results-driven engineer who combines strong technical skills
-  with a collaborative approach to deliver reliable, flexible, and innovative engineering
-  solutions for technically demanding projects.
-  with a collaborative approach to deliver reliable, flexible, and innovative engineering
-  solutions for technically demanding projects.
-</p>
+      Experienced in R&amp;D technical support within the home-appliance industry, with responsibilities 
+      spanning product validation, regulatory compliance, root-cause analysis, troubleshooting, 
+      and continuous improvement.
+    </p>
+    
+    <p class="about-text">
+      I am a rigorous, autonomous, and results-driven engineer who combines strong technical skills 
+      with a collaborative approach to deliver reliable, flexible, and innovative engineering 
+      solutions for technically demanding projects.
     </p>
   </section>
 
   <!-- ============ EXPERIENCE ============ -->
   <section class="experience" id="experience">
-  <!-- ============ EXPERIENCES ============ -->
-  <section class="experiences" id="experiences">
     <div class="section-head">
       <p class="tag">[SYS-02] TIMED RESPONSE</p>
       <h2>Experiences</h2>
     </div>
-
     <div class="timeline">
       <article class="time-card">
         <div class="time-meta">
@@ -152,15 +131,14 @@
           <h3>R&amp;D Technical Support Engineer</h3>
           <p class="time-org">BIOLUX <span class="dim">(Beko &amp; Maxwell)</span></p>
           <ul>
-            <li>Validated and functionally tested 15+ home appliance references in SKD production, achieving a 100% compliance rate with EN 60335, EN 60456, and EN 50242 standards.</li>
-            <li>Oversaw the entire industrialization process of CKD refrigerators — quality/compliance control and fault diagnosis at each manufacturing stage.</li>
-             <li>Contributed to the industrialization of 3+ new product references via Lean Manufacturing, 5S, and PDCA — achieving an 18% reduction in scrap rates.</li>
+            <li>Validated and functionally tested 20+ home appliance references in SKD production, achieving a 100% compliance rate with EN 60335, EN 60456, and EN 50242 standards.</li>
+            <li>Supported the entire industrialization process of CKD refrigerators — quality/compliance control and fault diagnosis at each manufacturing stage.</li>
+            <li>Contributed to the industrialization of 10+ new product references via Lean Manufacturing, 5S, and PDCA — achieving an 18% reduction in scrap rates.</li>
             <li>Applied LVD, EMC, RoHS, and Ecodesign regulatory requirements across all product validation activities.</li>
             <li>Diagnosed and resolved dozens of non-conformities using 8D, 5 Whys, and Ishikawa methodologies, implementing corrective and preventive actions (CAPA).</li>
           </ul>
         </div>
       </article>
-
       <article class="time-card">
         <div class="time-meta">
           <span class="time-range">MAR 2023 — APR 2023</span>
@@ -184,17 +162,15 @@
       <p class="tag">[SYS-03] IMPULSE TESTS</p>
       <h2>Projects</h2>
     </div>
-
     <div class="project-grid">
       <article class="project-card project-card-featured">
         <p class="project-kicker">MASTER'S THESIS</p>
-        <h3>7-DOF Manipulator: Modeling, Control &amp; Motion Planning</h3>
+        <h3>7-DOF Manipulator: Modeling, Control & Motion Planning</h3>
         <p>Kinematic and dynamic modeling, control, and motion planning of a 7-DOF Franka Emika Panda robotic manipulator under MATLAB/ROS for a real-time pick-and-place application.</p>
         <div class="project-stack">
           <span>MATLAB</span><span>ROS</span><span>Robotics</span><span>Real-time</span>
         </div>
       </article>
-
       <article class="project-card">
         <p class="project-kicker">EMBEDDED CONTROL</p>
         <h3>Egg Incubator — Three-Threshold Temperature Control</h3>
@@ -203,7 +179,6 @@
           <span>ESP32</span><span>C/C++</span><span>Thermal control</span>
         </div>
       </article>
-
       <article class="project-card">
         <p class="project-kicker">BACHELOR'S THESIS</p>
         <h3>Automated Greenhouse Regulation</h3>
@@ -212,7 +187,6 @@
           <span>Arduino</span><span>Adaptive logic</span><span>Actuators</span>
         </div>
       </article>
-
       <article class="project-card">
         <p class="project-kicker">INDUSTRIAL AUTOMATION</p>
         <h3>Water Filtration Regulation under TIA Portal</h3>
@@ -221,11 +195,10 @@
           <span>TIA Portal</span><span>Factory I/O</span><span>SCADA</span>
         </div>
       </article>
-
       <article class="project-card">
         <p class="project-kicker">EMBEDDED CONTROL</p>
         <h3>Servo Motor Position Control under STM32</h3>
-        <p>Position control of a servo motor via PID and state feedback — 20 ms settling, ±2° accuracy.</p>
+        <p>Position control of a servo motor via PID and state feedback — 20 ms response time, ±2° accuracy.</p>
         <div class="project-stack">
           <span>STM32</span><span>PID</span><span>State feedback</span>
         </div>
@@ -239,11 +212,10 @@
       <p class="tag">[SYS-04] PARAMETER TABLE</p>
       <h2>Skills</h2>
     </div>
-
     <div class="skills-grid">
       <div class="skill-block">
         <h4>Control Systems</h4>
-        <p>Modeling, identification, optimization, real-time control development, PID &amp; State Feedback Tuning</p>
+        <p>Modeling, identification, optimization, real-time control development, PID & State Feedback Tuning</p>
       </div>
       <div class="skill-block">
         <h4>Industrial Automation</h4>
@@ -251,10 +223,10 @@
       </div>
       <div class="skill-block">
         <h4>Robotics</h4>
-        <p>Kinematic &amp; dynamic modeling, motion planning, perception, navigation, ROS2</p>
+        <p>Kinematic & dynamic modeling, motion planning, perception, navigation, ROS2</p>
       </div>
       <div class="skill-block">
-        <h4>Embedded &amp; Electronics</h4>
+        <h4>Embedded & Electronics</h4>
         <p>PCB design, FPGA, microcontroller programming — STM32, ESP32, Arduino</p>
       </div>
       <div class="skill-block">
@@ -274,12 +246,12 @@
         <p>English — Advanced C1 · French — B2 · Arabic — Native</p>
       </div>
     </div>
-
+    
     <div class="education-cert-row">
       <div class="ec-col">
         <p class="tag-small">EDUCATION</p>
         <div class="ec-item">
-          <strong>M.Sc. Automatic Control</strong> — Automatic &amp; Industrial Computing<br>
+          <strong>M.Sc. Automatic Control</strong> — Automatic & Industrial Computing<br>
           <span class="dim">University of Mentouri Brothers Constantine 1 · 2023–2025</span>
         </div>
         <div class="ec-item">
@@ -349,7 +321,6 @@
       </div>
     </div>
   </section>
-
 </main>
 
 <!-- ============ FOOTER ============ -->
@@ -358,6 +329,5 @@
     Copyright &copy; 2026 Nihed Harbi <br> All Rights Reserved.
   </p>
 </footer>
-
 </body>
 </html>
