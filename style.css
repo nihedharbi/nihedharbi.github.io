@@ -1,7 +1,6 @@
 /* =========================================
    TOKENS — LIGHT THEME
 ========================================== */
-
 :root {
   --bg: #F5F7FA;
   --bg-raised: #FFFFFF;
@@ -439,7 +438,7 @@ h2 {
 }
 
 /* =========================================
-   PROJECTS
+   PROJECTS — TOUTES LES CARTES ONT LE MÊME STYLE QUE LE PROJET MASTER
 ========================================== */
 .project-grid {
   display: grid;
@@ -451,7 +450,8 @@ h2 {
   border: 1px solid var(--rule);
   border-radius: 10px;
   padding: 26px;
-  background: var(--bg-raised);
+  background: #F8FAFC;
+  border-left: 4px solid var(--trace);
   transition: border-color 0.15s, transform 0.15s, box-shadow 0.15s;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
 }
@@ -464,8 +464,6 @@ h2 {
 
 .project-card-featured {
   grid-column: 1 / -1;
-  background: #F8FAFC;
-  border-left: 4px solid var(--trace);
 }
 
 .project-kicker {
