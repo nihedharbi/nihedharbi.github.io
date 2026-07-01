@@ -438,7 +438,7 @@ h2 {
 }
 
 /* =========================================
-   PROJECTS — SANS BORDURE GAUCHE
+   PROJECTS
 ========================================== */
 .project-grid {
   display: grid;
@@ -469,7 +469,7 @@ h2 {
   font-family: var(--font-display);
   font-size: 0.7rem;
   letter-spacing: 0.1em;
-  color: var(--trace);
+  color: #2563EB;
   margin: 0 0 10px;
   font-weight: 500;
 }
