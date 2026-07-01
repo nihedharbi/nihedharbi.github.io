@@ -1,355 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Nihed Harbi — Control &amp; Automation Engineer</title>
-<meta name="description" content="Nihed Harbi — Control &amp; Automation Engineer. Modeling, control systems, industrial automation and robotics." />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Nihed Harbi • Control & Automation Engineer</title>
+  <meta name="description" content="Nihed Harbi — Control & Automation Engineer. Modeling, control systems, industrial automation and robotics." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="scope-grid" aria-hidden="true"></div>
 
-<!-- background grid -->
-<div class="scope-grid" aria-hidden="true"></div>
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="#top" class="nav-tag">N.HARBI</a>
+      <nav class="nav-links">
+        <a href="#top">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experiences</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<!-- ============ NAV ============ -->
-<header class="nav">
-  <div class="nav-inner">
-    <a href="#top" class="nav-tag">N.HARBI</a>
-    <nav class="nav-links">
-      <a href="#top">Home</a>
-      <a href="#about">About</a>
-      <a href="#experience">Experiences</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<main id="top">
-
-  <!-- ============ HERO : CONTROL LOOP ============ -->
-  <section class="hero" id="loop">
-    <div class="hero-inner">
-      <div class="hero-top">
-        <div class="hero-intro">
-          <p class="eyebrow">[SYS] CONTROL &amp; AUTOMATION ENGINEER</p>
-          <h1 class="hero-title">
-            Nihed Harbi
-          </h1>
-          <p class="hero-sub">
-            Closing the loop between modeling, control and real hardware — turning equations into working systems for robotics and industrial automation.
-          </p>
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-top">
+          <div class="hero-intro">
+            <p class="eyebrow">[SYS] CONTROL &amp; AUTOMATION ENGINEER</p>
+            <h1 class="hero-title">Nihed Harbi</h1>
+            <p class="hero-sub">
+              Closing the loop between modeling, control and real hardware — turning equations into working systems for robotics and industrial automation.
+            </p>
+          </div>
+          <div class="hero-portrait">
+            <div class="portrait-frame">
+              <img src="assets/nihed-photo.png" alt="Portrait of Nihed Harbi" />
+            </div>
+          </div>
         </div>
-        <div class="hero-portrait">
-          <div class="portrait-frame">
-            <img src="assets/nihed-photo.png" alt="Portrait of Nihed Harbi" />
+
+        <div class="loop-diagram" role="img" aria-label="Block diagram: reference input feeds a controller, driving a plant, output fed back.">
+          <svg viewBox="0 0 1000 260" xmlns="http://www.w3.org/2000/svg" class="loop-svg">
+            <defs>
+              <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                <path d="M0,0 L10,5 L0,10 z" fill="var(--trace)"/>
+              </marker>
+            </defs>
+            <text x="10" y="100" class="loop-label">r(t)</text>
+            <text x="2" y="118" class="loop-caption">reference</text>
+            <line x1="42" y1="100" x2="95" y2="100" class="loop-line" marker-end="url(#arrow)"/>
+            <circle cx="112" cy="100" r="17" class="loop-sum"/>
+            <line x1="103" y1="100" x2="121" y2="100" class="loop-sum-cross"/>
+            <line x1="112" y1="91" x2="112" y2="109" class="loop-sum-cross"/>
+            <line x1="129" y1="100" x2="195" y2="100" class="loop-line" marker-end="url(#arrow)"/>
+            <text x="162" y="88" class="loop-caption" text-anchor="middle">e(t)</text>
+            <rect x="200" y="56" width="240" height="88" rx="4" class="loop-block loop-block-main"/>
+            <text x="320" y="92" class="loop-block-title" text-anchor="middle">COMMAND</text>
+            <text x="320" y="113" class="loop-block-sub" text-anchor="middle">controller</text>
+            <text x="320" y="130" class="loop-block-tag" text-anchor="middle">u(t) = Kp·e + Ki∫e + Kd·de/dt</text>
+            <line x1="440" y1="100" x2="560" y2="100" class="loop-line" marker-end="url(#arrow)"/>
+            <rect x="565" y="56" width="220" height="88" rx="4" class="loop-block loop-block-main"/>
+            <text x="675" y="98" class="loop-block-title" text-anchor="middle">SYSTEM</text>
+            <text x="675" y="118" class="loop-block-sub" text-anchor="middle">process</text>
+            <line x1="785" y1="100" x2="940" y2="100" class="loop-line" marker-end="url(#arrow)"/>
+            <text x="950" y="95" class="loop-label">y(t)</text>
+            <path d="M 950 100 L 970 100 L 970 210 L 112 210 L 112 117" class="loop-line loop-feedback" marker-end="url(#arrow)" fill="none"/>
+            <text x="500" y="232" class="loop-caption" text-anchor="middle">feedback · sensing · diagnosis</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about" id="about">
+      <div class="section-head">
+        <p class="tag">[SYS-01] STATE VARIABLE</p>
+        <h2>About</h2>
+      </div>
+      <div class="about-text">
+        <p>I'm a Control &amp; Automation Engineer trained in modeling, control theory, industrial automation, and robotics, with expertise in PLC programming, SCADA systems, and industrial control systems architecture.</p>
+        <p>Experienced in R&amp;D technical support within the home-appliance industry, with responsibilities spanning product validation/qualification, regulatory compliance, root-cause analysis, troubleshooting, and continuous improvement.</p>
+        <p>I am a rigorous, autonomous, and results-driven engineer who combines strong technical skills with a collaborative approach to deliver reliable, flexible, and innovative engineering solutions for technically demanding projects.</p>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCES ============ -->
+    <section class="experiences" id="experience">
+      <div class="section-head">
+        <p class="tag">[SYS-02] TIMED RESPONSE</p>
+        <h2>Experiences</h2>
+      </div>
+      <div class="timeline">
+        <article class="time-card">
+          <div class="time-meta"><span class="time-range">SEP 2025 — PRESENT</span></div>
+          <div class="time-body">
+            <h3>R&amp;D Technical Support Engineer</h3>
+            <p class="time-org">BIOLUX <span class="dim">(Beko &amp; Maxwell)</span></p>
+            <ul>
+              <li>Validated and functionally tested 15+ home appliance references in SKD production, achieving a 100% compliance rate with EN 60335, EN 60456, and EN 50242 standards.</li>
+              <li>Contributed to the entire industrialization process of CKD refrigerators — quality/compliance control and fault diagnosis at each manufacturing stage.</li>
+              <li>Supported the industrialization of 3+ new product references via Lean Manufacturing, 5S, and PDCA — achieving an 18% reduction in scrap rates.</li>
+              <li>Applied LVD, EMC, RoHS, and Ecodesign regulatory requirements across all product validation activities.</li>
+              <li>Diagnosed and resolved dozens of non-conformities using 8D, 5 Whys, and Ishikawa methodologies, implementing corrective and preventive actions (CAPA).</li>
+            </ul>
+          </div>
+        </article>
+        <article class="time-card">
+          <div class="time-meta"><span class="time-range">MAR 2023 — APR 2023</span></div>
+          <div class="time-body">
+            <h3>Intern</h3>
+            <p class="time-org">SONELGAZ <span class="dim">Algerian Power Production Company SPE</span></p>
+            <ul>
+              <li>Studied DCS systems, PID control loops, and industrial control architectures.</li>
+              <li>Operated HMI interfaces for process supervision.</li>
+              <li>Supported maintenance of instrumentation equipments.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="projects" id="projects">
+      <div class="section-head">
+        <p class="tag">[SYS-03] IMPULSE TESTS</p>
+        <h2>Projects</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card project-card-featured">
+          <p class="project-kicker">MASTER'S THESIS</p>
+          <h3>7-DOF Manipulator: Modeling, Control &amp; Motion Planning</h3>
+          <p>Kinematic and dynamic modeling, control, and motion planning of a 7-DOF Franka Emika Panda robotic manipulator under MATLAB/ROS for a real-time pick-and-place application.</p>
+          <div class="project-stack"><span>MATLAB</span><span>ROS</span><span>Robotics</span><span>Real-time</span></div>
+        </article>
+        <article class="project-card">
+          <p class="project-kicker">EMBEDDED CONTROL</p>
+          <h3>Egg Incubator — Three-Threshold Temperature Control</h3>
+          <p>Designed and implemented a three-threshold temperature control system with ESP32-based supervision, holding ±0.5 °C.</p>
+          <div class="project-stack"><span>ESP32</span><span>C/C++</span><span>Thermal control</span></div>
+        </article>
+        <article class="project-card">
+          <p class="project-kicker">BACHELOR'S THESIS</p>
+          <h3>Automated Greenhouse Regulation</h3>
+          <p>Arduino-based automated regulation system for an agricultural greenhouse, with adaptive day/night threshold logic and actuator control.</p>
+          <div class="project-stack"><span>Arduino</span><span>Adaptive logic</span><span>Actuators</span></div>
+        </article>
+        <article class="project-card">
+          <p class="project-kicker">INDUSTRIAL AUTOMATION</p>
+          <h3>Water Filtration Regulation under TIA Portal</h3>
+          <p>Programmed a water filtration regulation system in TIA Portal, simulated in Factory I/O and supervised by a SCADA system.</p>
+          <div class="project-stack"><span>TIA Portal</span><span>Factory I/O</span><span>SCADA</span></div>
+        </article>
+        <article class="project-card">
+          <p class="project-kicker">EMBEDDED CONTROL</p>
+          <h3>Servo Motor Position Control under STM32</h3>
+          <p>Position control of a servo motor via PID and state feedback — 20 ms settling, ±2° accuracy.</p>
+          <div class="project-stack"><span>STM32</span><span>PID</span><span>State feedback</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="skills" id="skills">
+      <div class="section-head">
+        <p class="tag">[SYS-04] PARAMETER TABLE</p>
+        <h2>Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-block"><h4>Control Systems</h4><p>Modeling, identification, optimization, real-time control development, PID &amp; State Feedback Tuning</p></div>
+        <div class="skill-block"><h4>Industrial Automation</h4><p>Control architecture design, SCADA development, HMI/API interfaces</p></div>
+        <div class="skill-block"><h4>Robotics</h4><p>Kinematic &amp; dynamic modeling, motion planning, perception, navigation, ROS2</p></div>
+        <div class="skill-block"><h4>Embedded &amp; Electronics</h4><p>PCB design, FPGA, microcontroller programming — STM32, ESP32, Arduino</p></div>
+        <div class="skill-block"><h4>Programming</h4><p>VHDL, Assembly, C/C++, Python, VBA, PLC programming (IEC 61131-3)</p></div>
+        <div class="skill-block"><h4>Protocols</h4><p>Modbus, PROFINET, CAN Bus, HART, TCP/IP, MQTT</p></div>
+        <div class="skill-block"><h4>Software</h4><p>MATLAB/Simulink, NI LabVIEW, TIA Portal, Factory I/O, Proteus, SolidWorks, AutoCAD</p></div>
+        <div class="skill-block"><h4>Languages</h4><p>English — Advanced C1 · French — B2 · Arabic — Native</p></div>
+      </div>
+      <div class="education-cert-row">
+        <div class="ec-col">
+          <p class="tag-small">EDUCATION</p>
+          <div class="ec-item"><strong>M.Sc. Automatic Control</strong> — Automatic &amp; Industrial Computing<br><span class="dim">University of Mentouri Brothers Constantine 1 · 2023–2025</span></div>
+          <div class="ec-item"><strong>B.Sc. Automatic Control</strong><br><span class="dim">University of Mentouri Brothers Constantine 1 · 2021–2023</span></div>
+          <div class="ec-item"><strong>Preparatory Classes in Engineering</strong><br><span class="dim">National Polytechnic School of Constantine · 2018–2021</span></div>
+        </div>
+        <div class="ec-col">
+          <p class="tag-small">CERTIFICATIONS</p>
+          <div class="ec-item"><strong>MathWorks (MATLAB)</strong>
+            <ul class="cert-list">
+              <li><a href="https://matlabacademy.mathworks.com/progress/share/certificate.html?id=1aeff6f3-9250-4e52-af67-acb7c72caaa1" target="_blank" rel="noopener">Deep Learning — Certificate ↗</a></li>
+              <li><a href="https://matlabacademy.mathworks.com/progress/share/certificate.html?id=2eaa3874-a76d-4f65-a5d1-6f9f40740aca" target="_blank" rel="noopener">Machine Learning — Certificate ↗</a></li>
+              <li><a href="https://matlabacademy.mathworks.com/progress/share/certificate.html?id=6cb2d3a6-3326-454b-9757-88199ec7e5be" target="_blank" rel="noopener">Wireless Communications — Certificate ↗</a></li>
+              <li><a href="https://matlabacademy.mathworks.com/progress/share/certificate.html?id=360b02cb-33e0-45d8-90f6-08065937108f" target="_blank" rel="noopener">MATLAB Coder — Certificate ↗</a></li>
+              <li><a href="https://matlabacademy.mathworks.com/progress/share/certificate.html?id=76444877-cf73-4922-8db0-4a4d69bf3962" target="_blank" rel="noopener">MATLAB Onramp — Certificate ↗</a></li>
+            </ul>
+          </div>
+          <div class="ec-item"><strong>English Proficiency</strong>
+            <ul class="cert-list">
+              <li><a href="https://cert.efset.org/CEhrov" target="_blank" rel="noopener">EF SET English Certificate ↗</a></li>
+            </ul>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- THE SIGNATURE ELEMENT: animated control loop diagram -->
-      <div class="loop-diagram" role="img" aria-label="Block diagram: reference input feeds a controller block labeled Nihed Harbi, driving a plant block, producing system output, fed back to the comparator.">
-        <svg viewBox="0 0 1000 260" xmlns="http://www.w3.org/2000/svg" class="loop-svg">
-          <defs>
-            <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-              <path d="M0,0 L10,5 L0,10 z" fill="var(--trace)"/>
-            </marker>
-          </defs>
-
-          <!-- reference input -->
-          <text x="10" y="100" class="loop-label">r(t)</text>
-          <text x="2" y="118" class="loop-caption">reference</text>
-          <line x1="42" y1="100" x2="95" y2="100" class="loop-line" marker-end="url(#arrow)"/>
-
-          <!-- summing junction -->
-          <circle cx="112" cy="100" r="17" class="loop-sum"/>
-          <line x1="103" y1="100" x2="121" y2="100" class="loop-sum-cross"/>
-          <line x1="112" y1="91" x2="112" y2="109" class="loop-sum-cross"/>
-          <line x1="129" y1="100" x2="195" y2="100" class="loop-line" marker-end="url(#arrow)"/>
-          <text x="162" y="88" class="loop-caption" text-anchor="middle">e(t)</text>
-          <text x="162" y="118" class="loop-caption" text-anchor="middle">error</text>
-
-          <!-- controller block -->
-          <rect x="200" y="56" width="240" height="88" rx="3" class="loop-block loop-block-main"/>
-          <text x="320" y="92" class="loop-block-title" text-anchor="middle">COMMAND</text>
-          <text x="320" y="113" class="loop-block-sub" text-anchor="middle">controller</text>
-          <text x="320" y="130" class="loop-block-tag" text-anchor="middle">u(t) = Kp·e + Ki∫e + Kd·de/dt</text>
-          <line x1="440" y1="100" x2="560" y2="100" class="loop-line" marker-end="url(#arrow)"/>
-          <text x="500" y="92" class="loop-caption" text-anchor="middle">u(t)</text>
-
-          <!-- plant block -->
-          <rect x="565" y="56" width="220" height="88" rx="3" class="loop-block loop-block-main"/>
-          <text x="675" y="98" class="loop-block-title" text-anchor="middle">SYSTEM</text>
-          <text x="675" y="118" class="loop-block-sub" text-anchor="middle">process</text>
-          <line x1="785" y1="100" x2="940" y2="100" class="loop-line" marker-end="url(#arrow)"/>
-
-          <!-- output -->
-          <text x="950" y="95" class="loop-label">y(t)</text>
-          <text x="912" y="118" class="loop-caption">output</text>
-
-          <!-- feedback path -->
-          <path d="M 950 100 L 970 100 L 970 210 L 112 210 L 112 117"
-                class="loop-line loop-feedback" marker-end="url(#arrow)" fill="none"/>
-          <text x="500" y="232" class="loop-caption" text-anchor="middle">feedback · sensing · diagnosis</text>
-        </svg>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ ABOUT ============ -->
-  <section class="about" id="about">
-    <div class="section-head">
-      <p class="tag">[SYS-01] STATE VARIABLE</p>
-      <h2>About</h2>
-    </div>
-    <div class="about-text">
-<p>
-  I'm a Control &amp; Automation Engineer trained in modeling, control theory,
-  industrial automation, and robotics, with expertise in PLC programming, SCADA systems,
-  and industrial control systems architecture.
-</p>
-
-<p>
-  Experienced in R&amp;D technical support within the home-appliance industry, with responsibilities
-  spanning product validation/qualification, regulatory compliance, root-cause analysis, troubleshooting,
-  and continuous improvement.
-</p>
-
-<p>
-  I am a rigorous, autonomous, and results-driven engineer who combines strong technical skills
-  with a collaborative approach to deliver reliable, flexible, and innovative engineering
-  solutions for technically demanding projects.
-</p>
-    </div>
-  </section>
-
-  <!-- ============ EXPERIENCES ============ -->
-  <section class="experiences" id="experience">
-    <div class="section-head">
-      <p class="tag">[SYS-02] TIMED RESPONSE</p>
-      <h2>Experiences</h2>
-    </div>
-
-    <div class="timeline">
-      <article class="time-card">
-        <div class="time-meta">
-          <span class="time-range">SEP 2025 — PRESENT</span>
-        </div>
-        <div class="time-body">
-          <h3>R&amp;D Technical Support Engineer</h3>
-          <p class="time-org">BIOLUX <span class="dim">(Beko &amp; Maxwell)</span></p>
-          <ul>
-            <li>Validated and functionally tested 15+ home appliance references in SKD production, achieving a 100% compliance rate with EN 60335, EN 60456, and EN 50242 standards.</li>
-            <li>Contributed to the entire industrialization process of CKD refrigerators — quality/compliance control and fault diagnosis at each manufacturing stage.</li>
-             <li>Supported the industrialization of 3+ new product references via Lean Manufacturing, 5S, and PDCA — achieving an 18% reduction in scrap rates.</li>
-            <li>Applied LVD, EMC, RoHS, and Ecodesign regulatory requirements across all product validation activities.</li>
-            <li>Diagnosed and resolved dozens of non-conformities using 8D, 5 Whys, and Ishikawa methodologies, implementing corrective and preventive actions (CAPA).</li>
-          </ul>
-        </div>
-      </article>
-
-      <article class="time-card">
-        <div class="time-meta">
-          <span class="time-range">MAR 2023 — APR 2023</span>
-        </div>
-        <div class="time-body">
-          <h3>Intern</h3>
-          <p class="time-org">SONELGAZ <span class="dim">Algerian Power Production Company SPE</span></p>
-          <ul>
-            <li>Studied DCS systems, PID control loops, and industrial control architectures.</li>
-            <li>Operated HMI interfaces for process supervision.</li>
-            <li>Supported maintenance of instrumentation equipments.</li>
-          </ul>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <!-- ============ PROJECTS ============ -->
-  <section class="projects" id="projects">
-    <div class="section-head">
-      <p class="tag">[SYS-03] IMPULSE TESTS</p>
-      <h2>Projects</h2>
-    </div>
-
-    <div class="project-grid">
-      <article class="project-card project-card-featured">
-        <p class="project-kicker">MASTER'S THESIS</p>
-        <h3>7-DOF Manipulator: Modeling, Control &amp; Motion Planning</h3>
-        <p>Kinematic and dynamic modeling, control, and motion planning of a 7-DOF Franka Emika Panda robotic manipulator under MATLAB/ROS for a real-time pick-and-place application.</p>
-        <div class="project-stack">
-          <span>MATLAB</span><span>ROS</span><span>Robotics</span><span>Real-time</span>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <p class="project-kicker">EMBEDDED CONTROL</p>
-        <h3>Egg Incubator — Three-Threshold Temperature Control</h3>
-        <p>Designed and implemented a three-threshold temperature control system with ESP32-based supervision, holding ±0.5 °C.</p>
-        <div class="project-stack">
-          <span>ESP32</span><span>C/C++</span><span>Thermal control</span>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <p class="project-kicker">BACHELOR'S THESIS</p>
-        <h3>Automated Greenhouse Regulation</h3>
-        <p>Arduino-based automated regulation system for an agricultural greenhouse, with adaptive day/night threshold logic and actuator control.</p>
-        <div class="project-stack">
-          <span>Arduino</span><span>Adaptive logic</span><span>Actuators</span>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <p class="project-kicker">INDUSTRIAL AUTOMATION</p>
-        <h3>Water Filtration Regulation under TIA Portal</h3>
-        <p>Programmed a water filtration regulation system in TIA Portal, simulated in Factory I/O and supervised by a SCADA system.</p>
-        <div class="project-stack">
-          <span>TIA Portal</span><span>Factory I/O</span><span>SCADA</span>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <p class="project-kicker">EMBEDDED CONTROL</p>
-        <h3>Servo Motor Position Control under STM32</h3>
-        <p>Position control of a servo motor via PID and state feedback — 20 ms settling, ±2° accuracy.</p>
-        <div class="project-stack">
-          <span>STM32</span><span>PID</span><span>State feedback</span>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <!-- ============ SKILLS ============ -->
-  <section class="skills" id="skills">
-    <div class="section-head">
-      <p class="tag">[SYS-04] PARAMETER TABLE</p>
-      <h2>Skills</h2>
-    </div>
-
-    <div class="skills-grid">
-      <div class="skill-block">
-        <h4>Control Systems</h4>
-        <p>Modeling, identification, optimization, real-time control development, PID &amp; State Feedback Tuning</p>
-      </div>
-      <div class="skill-block">
-        <h4>Industrial Automation</h4>
-        <p>Control architecture design, SCADA development, HMI/API interfaces</p>
-      </div>
-      <div class="skill-block">
-        <h4>Robotics</h4>
-        <p>Kinematic &amp; dynamic modeling, motion planning, perception, navigation, ROS2</p>
-      </div>
-      <div class="skill-block">
-        <h4>Embedded &amp; Electronics</h4>
-        <p>PCB design, FPGA, microcontroller programming — STM32, ESP32, Arduino</p>
-      </div>
-      <div class="skill-block">
-        <h4>Programming</h4>
-        <p>VHDL, Assembly, C/C++, Python, VBA, PLC programming (IEC 61131-3)</p>
-      </div>
-      <div class="skill-block">
-        <h4>Protocols</h4>
-        <p>Modbus, PROFINET, CAN Bus, HART, TCP/IP, MQTT</p>
-      </div>
-      <div class="skill-block">
-        <h4>Software</h4>
-        <p>MATLAB/Simulink, NI LabVIEW, TIA Portal, Factory I/O, Proteus, SolidWorks, AutoCAD</p>
-      </div>
-      <div class="skill-block">
-        <h4>Languages</h4>
-        <p>English — Advanced C1 · French — B2 · Arabic — Native</p>
-      </div>
-    </div>
-
-    <div class="education-cert-row">
-      <div class="ec-col">
-        <p class="tag-small">EDUCATION</p>
-        <div class="ec-item">
-          <strong>M.Sc. Automatic Control</strong> — Automatic &amp; Industrial Computing<br>
-          <span class="dim">University of Mentouri Brothers Constantine 1 · 2023–2025</span>
-        </div>
-        <div class="ec-item">
-          <strong>B.Sc. Automatic Control</strong><br>
-          <span class="dim">University of Mentouri Brothers Constantine 1 · 2021–2023</span>
-        </div>
-        <div class="ec-item">
-          <strong>Preparatory Classes in Engineering</strong><br>
-          <span class="dim">National Polytechnic School of Constantine · 2018–2021</span>
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact">
+      <div class="contact-inner">
+        <p class="tag">[SYS-05] OUTPUT</p>
+        <h2>Let's close the loop.</h2>
+        <p class="contact-sub">Open to control, automation, and robotics engineering opportunities, both locally and internationally.</p>
+        <div class="contact-links">
+          <a href="mailto:nihed.harbi.contact@gmail.com" class="contact-link-primary contact-row">
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <path d="m2 7 10 6 10-6"/>
+            </svg>
+            <span>nihed.harbi.contact@gmail.com</span>
+          </a>
+          <a href="tel:+213549788475" class="contact-link contact-row">
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <span>+213 549 788 475</span>
+          </a>
+          <span class="contact-link contact-row">
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>Algeria</span>
+          </span>
+          <a href="https://linkedin.com/in/nihed-harbi" target="_blank" rel="noopener" class="contact-link contact-link-accent contact-row">
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.07 2.07 0 1 1 0-4.15 2.07 2.07 0 0 1 0 4.15zM7.12 20.45H3.56V9h3.56v11.45z"/>
+            </svg>
+            <span>LinkedIn</span>
+          </a>
         </div>
       </div>
-      <div class="ec-col">
-        <p class="tag-small">CERTIFICATIONS</p>
-        <div class="ec-item">
-          <strong>MathWorks (MATLAB)</strong>
-          <ul class="cert-list">
-            <li><a href="https://matlabacademy.mathworks.com/progress/share/certificate.html?id=1aeff6f3-9250-4e52-af67-acb7c72caaa1" target="_blank" rel="noopener">Deep Learning — Certificate ↗</a></li>
-            <li><a href="https://matlabacademy.mathworks.com/progress/share/certificate.html?id=2eaa3874-a76d-4f65-a5d1-6f9f40740aca" target="_blank" rel="noopener">Machine Learning — Certificate ↗</a></li>
-            <li><a href="https://matlabacademy.mathworks.com/progress/share/certificate.html?id=6cb2d3a6-3326-454b-9757-88199ec7e5be" target="_blank" rel="noopener">Wireless Communications — Certificate ↗</a></li>
-            <li><a href="https://matlabacademy.mathworks.com/progress/share/certificate.html?id=360b02cb-33e0-45d8-90f6-08065937108f" target="_blank" rel="noopener">MATLAB Coder — Certificate ↗</a></li>
-            <li><a href="https://matlabacademy.mathworks.com/progress/share/certificate.html?id=76444877-cf73-4922-8db0-4a4d69bf3962" target="_blank" rel="noopener">MATLAB Onramp — Certificate ↗</a></li>
-          </ul>
-        </div>
-        <div class="ec-item">
-          <strong>English Proficiency</strong>
-          <ul class="cert-list">
-            <li><a href="https://cert.efset.org/CEhrov" target="_blank" rel="noopener">EF SET English Certificate ↗</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- ============ CONTACT ============ -->
-  <section class="contact" id="contact">
-    <div class="contact-inner">
-      <p class="tag">[SYS-05] OUTPUT</p>
-      <h2>Let's close the loop.</h2>
-      <p class="contact-sub">Open to control, automation, and robotics engineering opportunities, both locally and internationally.</p>
-      <div class="contact-links">
-        <a href="mailto:nihed.harbi.contact@gmail.com" class="contact-link-primary contact-row">
-          <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <rect x="2" y="4" width="20" height="16" rx="2"/>
-            <path d="m2 7 10 6 10-6"/>
-          </svg>
-          <span>nihed.harbi.contact@gmail.com</span>
-        </a>
-        <a href="tel:+213549788475" class="contact-link contact-row">
-          <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
-          </svg>
-          <span>+213 549 788 475</span>
-        </a>
-        <span class="contact-link contact-row">
-          <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/>
-            <circle cx="12" cy="10" r="3"/>
-          </svg>
-          <span>Algeria</span>
-        </span>
-        <a href="https://linkedin.com/in/nihed-harbi" target="_blank" rel="noopener" class="contact-link contact-link-accent contact-row">
-          <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.07 2.07 0 1 1 0-4.15 2.07 2.07 0 0 1 0 4.15zM7.12 20.45H3.56V9h3.56v11.45z"/>
-          </svg>
-          <span>LinkedIn</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<!-- ============ FOOTER ============ -->
-<footer class="footer">
-  <p style="font-size: 0.85em; opacity: 0.7;">
-    Copyright &copy; 2026 Nihed Harbi <br> All Rights Reserved.
-  </p>
-</footer>
-
+  <footer class="footer">
+    <p>Copyright &copy; 2026 Nihed Harbi — All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
