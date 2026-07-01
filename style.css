@@ -438,7 +438,7 @@ h2 {
 }
 
 /* =========================================
-   PROJECTS — TOUTES LES CARTES ONT LE MÊME STYLE QUE LE PROJET MASTER
+   PROJECTS — SANS BORDURE GAUCHE
 ========================================== */
 .project-grid {
   display: grid;
@@ -450,8 +450,7 @@ h2 {
   border: 1px solid var(--rule);
   border-radius: 10px;
   padding: 26px;
-  background: #F8FAFC;
-  border-left: 4px solid var(--trace);
+  background: var(--bg-raised);
   transition: border-color 0.15s, transform 0.15s, box-shadow 0.15s;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
 }
